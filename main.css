@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: 40%;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(red, rgb(232, 52, 232));
+  border-radius: 50%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  bottom: 70%;
+  left: 25%;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(lime, rgb(0, 255, 255));
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.card {
+  background-color: rgba(128, 128, 128, 0.5294117647);
+  width: 500px;
+  height: 300px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  z-index: 99 !important;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #000;
+  cursor: pointer;
+}
+.card .card-header {
+  padding: 1rem;
+}
+.card .card-header img {
+  width: 14%;
+  margin-top: 20px;
+}
+.card .card-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.4rem;
+  padding: 4.5rem 1rem;
+  font-size: 30px;
+  margin-right: 20px;
+  align-items: center;
+}
+.card .card-body img {
+  width: 100px;
+  margin-left: 40px;
+}
+.card .card-body .text {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.card .card-body .text .o_2 {
+  padding-right: 15px;
+}
+.card .card-body .text .d:hover {
+  color: lime;
+}
+.card .card-body .text .a:hover {
+  color: red;
+}
+.card .card-body .text .v:hover {
+  color: aqua;
+}
+.card .card-body .text .l:hover {
+  color: rgb(255, 217, 0);
+}
+.card .card-body .text .a_2:hover {
+  color: rgb(255, 0, 0);
+}
+.card .card-body .text .t:hover {
+  color: lime;
+}
+.card .card-body .text .o:hover {
+  color: rgb(0, 255, 170);
+}
+.card .card-body .text .v_2:hover {
+  color: orangered;
+}
+.card .card-body .text .i:hover {
+  color: lime;
+}
+.card .card-body .text .z:hover {
+  color: rgb(255, 255, 0);
+}
+.card .card-body .text .z_2:hover {
+  color: red;
+}
+.card .card-body .text .a_3:hover {
+  color: aqua;
+}
+.card .card-body .text .t_2:hover {
+  color: aquamarine;
+}
+.card .card-body .text .i_2:hover {
+  color: rgb(0, 64, 255);
+}
+.card .card-body .text .l_2:hover {
+  color: gold;
+}
+.card .card-body .text .l_3:hover {
+  color: lime;
+}
+.card .card-body .text .o_2:hover {
+  color: aqua;
+}
+
+.card:active {
+  background: white;
+}/*# sourceMappingURL=main.css.map */
